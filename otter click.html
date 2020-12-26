@@ -1,0 +1,1494 @@
+<html>
+
+
+<head>
+	
+	
+	<title>Otter click</title>
+	 
+	
+	<style>
+	
+		body{
+			background-color: aqua;
+		}
+	
+		h1{
+			margin-top:70px;
+			text-align: center;
+			color:black;
+			font-size: 30px;
+		}
+		
+		#result{
+			position: relative;
+			top:70px;
+			text-align: center;
+			color:white;
+			font-size: 30px;
+		}
+		#plussec{
+			
+			color:white;
+			font-size: 25px;
+			position: absolute;
+			left:40%;
+			top:0px;
+		}
+		#win{
+			margin-top:70px;
+			text-align: center;
+			color:black;
+			font-size: 70px;
+		}
+	
+	
+		#start{
+			
+			background-color: darkmagenta;
+			border-radius: 30px;
+			width: 120px;
+			font-size: 35px;
+			position: relative;
+			left:46%;
+		}
+	
+		#c1{
+			
+			
+			font-size: 90px;
+			color:red;
+			position: absolute;
+			left:5%;
+			top:30%;
+		}
+		
+		#c2{
+			
+			
+			font-size: 90px;
+			color:yellow;
+			position: absolute;
+			left:80%;
+			top:20%;
+		}
+		
+		
+		
+		
+		#c3{
+			
+			
+			font-size: 90px;
+			color:blue;
+			position: absolute;
+			left:40%;
+			top:10%;
+		}
+		
+		
+		#c4{
+			
+			
+			font-size: 90px;
+			color:coral;
+			position: absolute;
+			left:30%;
+			top:70%;
+		}
+		
+		
+		#c5{
+			
+			
+			font-size: 90px;
+			color:antiquewhite;
+			position: absolute;
+			left:20%;
+			top:80%;
+		}
+		
+		
+		#c6{
+			
+			
+			font-size: 90px;
+			color:green;
+			position: absolute;
+			left:82%;
+			top:10%;
+		}
+		
+		
+		#c7{
+			
+			
+			font-size: 90px;
+			color:black;
+			position: absolute;
+			left:40%;
+			top:70%;
+		}
+		
+		
+		
+		
+		
+		
+		
+		#c8{
+			
+			
+			font-size: 90px;
+			color:mediumslateblue;
+			position: absolute;
+			left:50%;
+			top:30%;
+		}
+		
+		
+		
+		
+		
+		#c9{
+			
+			
+			font-size: 90px;
+			color:brown;
+			position: absolute;
+			left:45%;
+			top:62%;
+		}
+		
+		
+		
+		
+		#c10{
+			
+			
+			font-size: 90px;
+			color:aquamarine;
+			position: absolute;
+			left:70%;
+			top:5%;
+		}
+		
+		
+		
+		
+		#c11{
+			
+			
+			font-size: 90px;
+			color:fuchsia;
+			position: absolute;
+			left:80%;
+			top:70%;
+		}
+		
+		
+		
+		
+		#c12{
+			
+			
+			font-size: 90px;
+			color:chartreuse;
+			position: absolute;
+			left:15%;
+			top:52%;
+		}
+		
+		
+		
+		
+		#c13{
+			
+			
+			font-size: 90px;
+			color:firebrick;
+			position: absolute;
+			left:77%;
+			top:65%;
+		}
+		
+		
+		
+		#c14{
+			
+			
+			font-size: 90px;
+			color:darkmagenta;
+			position: absolute;
+			left:82%;
+			top:10%;
+		}
+		
+		
+		
+		
+		#c15{
+			
+			
+			font-size: 90px;
+			color:#1e4127;
+			position: absolute;
+			left:10%;
+			top:82%;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		#again{
+			background-color: red;
+			border-radius: 30px;
+			width: 150px;
+			font-size: 35px;
+			position: relative;
+			top:20%;
+			left:46%;
+		}
+		
+		#next{
+			background-color: green;
+			border-radius: 30px;
+			width: 150px;
+			font-size: 35px;
+			position: relative;
+			top:20%;
+			left:46%;
+		}
+	
+	</style>
+	
+	
+	</head>
+
+<body>
+	
+	<h1 style="display:none;" id="plussec">You took more than 2 seconds</h1>
+	
+	<h1 id="win" style="display:none; color:green;"> Congratulations!! You winn    </h1>
+	
+	<h1 style="display:none;" id="result"> Too Slow! <strong style="color:red;">You Lose!</strong> Your score was 0. <br>
+Click the button to play again! </h1>
+	
+	<button id="again" style="display:none;" onclick="retry();" >Play Again</button>
+	<div id="first">  
+	
+	<h1>
+	
+	Click the following Otter within 2 seconds to score.<br>
+Get 15 points to win!<br>
+		
+		<br>
+		
+		(The wider your screen, the harder the game 😃)
+	
+	
+	</h1>
+	
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button id="start">Start</button>
+	
+	<br>
+	
+	<br>
+	
+	<h1>Click Start to Begin!</h1>
+	
+	
+	</div>
+	
+	
+	
+	<h1 style="display:none;" id="start2">Starting...</h1>
+	
+	
+<div onclick="click1();" >	<i  style="display:none;" id="c1" class="fas fa-otter"></i> </div>
+	
+<div onclick="click2();">	<i  style="display:none;" id="c2" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click3();">	<i  style="display:none;" id="c3" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click4();">	<i  style="display:none;" id="c4" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click5();">	<i  style="display:none;" id="c5" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click6();">	<i  style="display:none;" id="c6" class="fas fa-otter"></i> </div>
+	
+	
+	<div onclick="click7();">	<i  style="display:none;" id="c7" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click8();">	<i  style="display:none;" id="c8" class="fas fa-otter"></i> </div>
+	
+	
+	<div onclick="click9();">	<i  style="display:none;" id="c9" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click10();">	<i  style="display:none;" id="c10" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click11();">	<i  style="display:none;" id="c11" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click12();">	<i  style="display:none;" id="c12" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click13();">	<i  style="display:none;" id="c13" class="fas fa-otter"></i> </div>
+	
+	<div onclick="click14();">	<i  style="display:none;" id="c14" class="fas fa-otter"></i> </div>
+	
+	
+	<div onclick="click15();">	<i  style="display:none;" id="c15" class="fas fa-otter"></i> </div>
+	
+	
+	
+	<button style="display:none;" id="next"> Next </button>
+	
+	
+	
+	
+	
+	<div style="display:none;" id="ball0">   </div>
+	<div style="display:none;" id="ball1">   </div>
+	<div style="display:none;" id="ball2">   </div>
+	<div style="display:none;" id="ball3">   </div>
+	<div style="display:none;" id="ball4">   </div>
+	<div style="display:none;" id="ball5">   </div>
+	<div style="display:none;" id="ball6">   </div>
+	<div style="display:none;" id="ball7">   </div>
+	<div style="display:none;" id="ball8">   </div>
+	<div style="display:none;" id="ball9">   </div>
+	<div style="display:none;" id="ball10">   </div>
+	<div style="display:none;" id="ball11">   </div>
+	<div style="display:none;" id="ball12">   </div>
+	<div style="display:none;" id="ball13">   </div>
+	<div style="display:none;" id="ball14">   </div>
+	<div style="display:none;" id="ball15">   </div>
+	
+	<script>
+		
+		
+		
+		
+		
+		
+		document.getElementById("next").addEventListener("click" , nextgame);
+		
+		
+		function nextgame() {
+			
+			window.location.href="circle click.html";
+		}
+		
+		function retry() {
+			
+			window.location.href="otter click.html";
+		}
+		
+		var sco =[0];
+	
+	
+document.getElementById("start").addEventListener("click" , startgame);
+		
+		
+		// circle 1
+		
+		function showc1() {
+		
+		window.c1.style.display="block";
+	}
+		
+		function hidec1() {
+			
+			window.c1.style.color="white";
+		
+		window.c1.style.display="none";
+	}
+		
+		
+	
+	
+		// circle 2
+		function showc2() {
+			
+			window.c2.style.display="block";
+		}
+		function hidec2() {
+			window.c2.style.color="white";
+			window.c2.style.display="none";
+		}
+		
+		function click1() {
+			
+		 window.ball1.style.color="white";
+			
+			window.c1.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc2 , 2000);
+			
+			setTimeout(hidec2 , 4000);
+			
+		//	clearTimeout(lk);
+		}
+		
+		// circle 3
+		
+		function showc3() {
+			
+			window.c3.style.display="block";
+		}
+		function hidec3() {
+			
+			window.c3.style.color="white";
+			
+			window.c3.style.display="none";
+		}
+		
+		function click2() {
+			
+			window.ball2.style.color="white";
+			
+			window.c2.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc3 , 2000);
+			
+			setTimeout(hidec3 , 4000);
+		}
+		
+		
+		
+		
+		// circle 4
+		
+		function showc4() {
+			
+			window.c4.style.display="block";
+		}
+		function hidec4() {
+			
+			window.c4.style.color="white";
+			
+			window.c4.style.display="none";
+		}
+		
+		function click3() {
+			
+			window.ball3.style.color="white";
+			
+			window.c3.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc4 , 2000);
+			
+			setTimeout(hidec4 , 4000);
+		}
+		
+		
+		// circle 5
+		
+		function showc5() {
+			
+			window.c5.style.display="block";
+		}
+		function hidec5() {
+			
+			window.c5.style.color="white";
+			
+			window.c5.style.display="none";
+		}
+		
+		function click4() {
+			
+			window.ball4.style.color="white";
+			
+			window.c4.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc5 , 2000);
+			
+			setTimeout(hidec5 , 4000);
+		}
+		
+		// circle 6
+		
+		function showc6() {
+			
+			
+			window.c6.style.display="block";
+		}
+		function hidec6() {
+			
+			window.c6.style.color="white";
+			
+			window.c6.style.display="none";
+		}
+		
+		function click5() {
+			
+			window.ball5.style.color="white";
+			
+			window.c5.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc6 , 2000);
+			
+			setTimeout(hidec6 , 4000);
+		}
+		
+		// circle 7
+		
+		function showc7() {
+			
+			window.c7.style.display="block";
+		}
+		function hidec7() {
+			
+			window.c7.style.color="white";
+			
+			window.c7.style.display="none";
+		}
+		
+		function click6() {
+			
+			window.ball6.style.color="white";
+			
+			window.c6.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc7 , 2000);
+			
+			setTimeout(hidec7 , 4000);
+		}
+		
+		
+		// circle 8
+		
+		function showc8() {
+			
+			window.c8.style.display="block";
+		}
+		function hidec8() {
+			
+			window.c8.style.color="white";
+			window.c8.style.display="none";
+		}
+		
+		function click7() {
+			
+			window.ball7.style.color="white";
+			
+			window.c7.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc8 , 2000);
+			
+			setTimeout(hidec8 , 4000);
+		}
+		
+		
+		// circle 9
+		
+		function showc9() {
+			
+			window.c9.style.display="block";
+		}
+		function hidec9() {
+			
+			window.c9.style.color="white";
+			
+			window.c9.style.display="none";
+		}
+		
+		function click8() {
+			
+			window.ball8.style.color="white";
+			
+			window.c8.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc9 , 2000);
+			
+			setTimeout(hidec9 , 4000);
+		}
+		
+		
+		
+		// circle 10
+		
+		function showc10() {
+			
+			window.c10.style.display="block";
+		}
+		function hidec10() {
+			
+			window.c10.style.color="white";
+			window.c10.style.display="none";
+		}
+		
+		function click9() {
+			
+			
+			window.ball9.style.color="white";
+			
+			window.c9.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc10 , 2000);
+			
+			setTimeout(hidec10 , 4000);
+		}
+		
+		
+		// circle 11
+		
+		function showc11() {
+			
+			window.c11.style.display="block";
+		}
+		function hidec11() {
+			
+			window.c11.style.color="white";
+			window.c11.style.display="none";
+		}
+		
+		function click10() {
+			
+			window.ball10.style.color="white";
+			
+			window.c10.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc11 , 2000);
+			
+			setTimeout(hidec11 , 4000);
+		}
+		
+		
+		// circle 12
+		
+		function showc12() {
+			
+			window.c12.style.display="block";
+		}
+		function hidec12() {
+			
+			window.c12.style.color="white";
+			
+			window.c12.style.display="none";
+		}
+		
+		function click11() {
+			
+			window.ball11.style.color="white";
+			
+			window.c11.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc12 , 2000);
+			
+			setTimeout(hidec12 , 4000);
+		}
+		
+		
+		// circle 13
+		
+		function showc13() {
+			
+			window.c13.style.display="block";
+		}
+		function hidec13() {
+			
+			window.c13.style.color="white";
+			window.c13.style.display="none";
+		}
+		
+		function click12() {
+			
+			
+			window.ball12.style.color="white";
+			
+			window.c12.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc13 , 2000);
+			
+			setTimeout(hidec13 , 4000);
+		}
+		
+				// circle 13
+		
+		function showc14() {
+			
+			window.c14.style.display="block";
+		}
+		function hidec14() {
+			
+			window.c14.style.color="white";
+			
+			window.c14.style.display="none";
+		}
+		
+		function click13() {
+			
+			window.ball13.style.color="white";
+			
+			window.c13.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc14 , 2000);
+			
+			setTimeout(hidec14 , 4000);
+		}
+		
+		
+		
+		
+		// circle 14
+		
+		function showc15() {
+			
+			window.c15.style.display="block";
+		}
+		function hidec15() {
+			
+			window.c15.style.color="white";
+			window.c15.style.display="none";
+		}
+		
+		function click14() {
+			
+			window.ball14.style.color="white";
+			
+			window.c14.style.display="none";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0]++ + "<br>" + "Click the button to play again";
+
+			
+			setTimeout(showc15 , 2000);
+			
+			setTimeout(hidec15 , 4000);
+		}
+		
+		
+		// circle 15
+		
+	
+		
+		function click15() {
+			
+			window.ball15.style.color="white";
+			
+			window.c15.style.display="none";
+			
+			window.win.style.display="block";
+			document.body.style.backgroundColor="blue";
+			window.start2.style.display="none";
+			
+			
+			window.result.innerHTML="Congratulations! You win . Your score is 15" + "<br>" + "Click the button to elevate the level";
+
+			
+			window.result.style.display="block";
+			
+			window.next.style.display="block";
+		}
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+	
+		
+		
+		/* function colwhite() {
+			
+			
+			if(window.ball0.style.color=="white" &&  window.ball1.style.color!="white" || window.ball1.style.color=="white" &&  window.ball2.style.color!="white" || window.ball2.style.color=="white" &&  window.ball3.style.color!="white" || window.ball3.style.color=="white" &&  window.ball4.style.color!="white" || window.ball4.style.color=="white" &&  window.ball5.style.color!="white" || window.ball5.style.color=="white" &&  window.ball6.style.color!="white" || window.ball6.style.color=="white" &&  window.ball7.style.color!="white" || window.ball7.style.color=="white" &&  window.ball8.style.color!="white" || window.ball8.style.color=="white" &&  window.ball9.style.color!="white" || window.ball9.style.color=="white" &&  window.ball10.style.color!="white" || window.ball10tyle.color=="white" &&  window.ball11.style.color!="white" || window.ball11.style.color=="white" &&  window.ball12.style.color!="white" || window.ball12.style.color=="white" &&  window.ball13.style.color!="white" || window.ball13.style.color=="white" &&  window.ball14.style.color!="white" || window.ball14.style.color=="white" &&  window.ball15.style.color!="white" ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+			
+			} */
+		
+			function colwhite15() {
+			
+			
+			if(window.ball14.style.color=="white" &&  window.ball15.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				
+			
+			}
+		
+	
+		
+			function colwhite14() {
+			
+			
+			if(window.ball13.style.color=="white" &&  window.ball14.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite15 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite13() {
+			
+			
+			if(window.ball12.style.color=="white" &&  window.ball13.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite14 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite12() {
+			
+			
+			if(window.ball11.style.color=="white" &&  window.ball12.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite13 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite11() {
+			
+			
+			if(window.ball10.style.color=="white" &&  window.ball11.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite12 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite10() {
+			
+			
+			if(window.ball9.style.color=="white" &&  window.ball10.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite11 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite9() {
+			
+			
+			if(window.ball8.style.color=="white" &&  window.ball9.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite10 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite8() {
+			
+			
+			if(window.ball7.style.color=="white" &&  window.ball8.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite9 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite7() {
+			
+			
+			if(window.ball6.style.color=="white" &&  window.ball7.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite8 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite6() {
+			
+			
+			if(window.ball5.style.color=="white" &&  window.ball6.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite7 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite5() {
+			
+			
+			if(window.ball4.style.color=="white" &&  window.ball5.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite6 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite4() {
+			
+			
+			if(window.ball3.style.color=="white" &&  window.ball4.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite5 , 4000)
+				}
+			
+			}
+		
+		
+		
+		
+		function colwhite3() {
+			
+			
+			if(window.ball2.style.color=="white" &&  window.ball3.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite4 , 4000)
+				}
+			
+			}
+		
+		
+		
+		function colwhite2() {
+			
+			
+			if(window.ball1.style.color=="white" &&  window.ball2.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite3 , 4000)
+				}
+			
+			}
+		
+		
+		
+			function colwhite() {
+			
+			
+			if(window.ball0.style.color=="white" &&  window.ball1.style.color!="white"  ){    
+			  
+			
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					}
+				
+				else {
+					
+					setInterval(colwhite2 , 4000)
+				}
+			
+			}
+		
+		
+			
+		
+		// mn 3 second l 5 seconds settimeout
+		function startgame() {
+			
+			window.ball0.style.color="white";
+			window.first.style.display="none";
+			window.start2.style.display="block";
+			
+		 setTimeout(showc1 , 2000);
+			
+			setTimeout(hidec1 , 4000);
+			
+		/*	if(  	window.c1.style.display=="none"
+			&& window.c2.style.display=="none"
+			&& window.c3.style.display=="none"
+			&& window.c4.style.display=="none"
+			&& window.c5.style.display=="none"
+			&& window.c6.style.display=="none"
+			&& window.c7.style.display=="none"
+			&& window.c8.style.display=="none"
+			&& window.c9.style.display=="none"
+			&& window.c10.style.display=="none"
+			&& window.c11.style.display=="none"
+			&& window.c12.style.display=="none"
+			&& window.c13.style.display=="none"
+			&& window.c14.style.display=="none"
+			&& window.c15.style.display=="none"){
+				
+			var x1 = setInterval(se , 1000); */
+			
+			setInterval(colwhite , 4000);
+				
+				}
+			
+		/*		if(l > 4){  
+			
+			window.first.style.display="none";
+			
+			document.body.style.backgroundColor="black";
+			
+			window.result.innerHTML="Too Slow! <strong style='color:red';>You Lose!</strong> Your score was" + " " + sco[0] + "<br>" + "Click the button to play again";
+			window.result.style.display="block";
+			
+			window.again.style.display="block";
+			
+			 window.start2.style.display="none";
+				
+				window.plussec.style.display="block";
+					} */
+		
+			
+	/*	var sh1 = setTimeout(showlose1 , (4000 , 6000));
+		var sh2 = setTimeout(showlose2 , (6000 , 10000));
+		var sh3 = setTimeout(showlose3 , (10000 , 14000));
+			var sh4 = setTimeout(showlose4 , (14000 , 18000));
+			var sh5 = setTimeout(showlose5 , (18000 , 22000));
+			var sh6 = setTimeout(showlose6 , (22000 , 26000));
+			var sh7 = setTimeout(showlose7 , (26000 , 30000));
+			var sh8 = setTimeout(showlose8 , (30000 , 34000));
+			var sh9 = setTimeout(showlose9 , (34000 , 38000));
+			var sh10 = setTimeout(showlose10 , (38000 , 42000));
+			var sh11 = setTimeout(showlose11 , (42000 , 46000));
+			var sh12 = setTimeout(showlose12 , (46000 , 50000));
+			var sh13 = setTimeout(showlose13 , (50000 , 54000));
+			var sh14 = setTimeout(showlose14 , (54000 , 58000));
+			var sh15 = setTimeout(showlose15 , (58000 , 62000)); */
+			
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+	
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<script src="https://kit.fontawesome.com/682febeeb9.js" crossorigin="anonymous">
+		
+	</script>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
